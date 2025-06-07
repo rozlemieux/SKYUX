@@ -1,0 +1,9 @@
+{
+  "$schema": "../node_modules/nx/schemas/nx-schema.json",
+  "npmScope": "skyux-react",
+  "workspaceLayout": {
+    "appsDir": "apps",
+    "libsDir": "libs"
+  },
+  "defaultBase": "main"
+}

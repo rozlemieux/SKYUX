@@ -1,0 +1,29 @@
+{
+  "name": "tabs",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/components/tabs/src",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "options": {
+        "outputPath": "dist/libs-react/tabs",
+        "tsConfig": "libs-react/libs/components/tabs/tsconfig.json"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/libs-react/tabs"],
+      "options": {
+        "jestConfig": "libs-react/libs/components/tabs/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "options": {
+        "lintFilePatterns": ["{projectRoot}/src/**/*.{ts,tsx}"]
+      }
+    }
+  },
+  "tags": ["react"]
+}

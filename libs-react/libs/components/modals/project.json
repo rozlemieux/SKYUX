@@ -1,0 +1,29 @@
+{
+  "name": "modals",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/components/modals/src",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "options": {
+        "outputPath": "dist/libs-react/modals",
+        "tsConfig": "libs-react/libs/components/modals/tsconfig.json"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/libs-react/modals"],
+      "options": {
+        "jestConfig": "libs-react/libs/components/modals/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "options": {
+        "lintFilePatterns": ["{projectRoot}/src/**/*.{ts,tsx}"]
+      }
+    }
+  },
+  "tags": ["react"]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "forms",
+  "$schema": "../../../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "libs/components/forms/src",
+  "targets": {
+    "build": {
+      "executor": "@nx/js:tsc",
+      "options": {
+        "outputPath": "dist/libs-react/forms",
+        "tsConfig": "libs-react/libs/components/forms/tsconfig.json"
+      }
+    },
+    "test": {
+      "executor": "@nx/jest:jest",
+      "outputs": ["{workspaceRoot}/coverage/libs-react/forms"],
+      "options": {
+        "jestConfig": "libs-react/libs/components/forms/jest.config.ts"
+      }
+    },
+    "lint": {
+      "executor": "@nx/eslint:lint",
+      "options": {
+        "lintFilePatterns": ["{projectRoot}/src/**/*.{ts,tsx}"]
+      }
+    }
+  },
+  "tags": ["react"]
+}
