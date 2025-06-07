@@ -1,0 +1,39 @@
+@import "../../../../../../libs/components/theme/src/lib/styles/sky.scss";
+
+.sky-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sky-modal {
+  background: #fff;
+  max-width: 600px;
+  width: 90%;
+  max-height: 90%;
+  overflow: auto;
+  border-radius: 4px;
+}
+
+.sky-modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  padding: 1rem;
+}
+
+.sky-modal-body {
+  padding: 1rem;
+}
+
+.sky-modal-close {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  line-height: 1;
+  cursor: pointer;
+}

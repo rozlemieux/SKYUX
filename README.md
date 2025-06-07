@@ -13,3 +13,8 @@ This project was generated using [Nx](https://nx.dev).
 [10-minute video showing all Nx features](https://nx.dev/getting-started/intro)
 
 [Interactive Tutorial](https://nx.dev/tutorial/01-create-application)
+
+## React components
+
+The `libs-react` directory contains a standalone Nx workspace with React implementations of SKYUX components.
+Run `npm install` inside that folder to set up dependencies. Build and test the React libraries using `npm run build` and `npm run test` from within `libs-react`.

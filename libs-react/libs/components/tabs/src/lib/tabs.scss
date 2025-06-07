@@ -1,0 +1,18 @@
+@import "../../../../../../libs/components/theme/src/lib/styles/sky.scss";
+
+.sky-tabs {
+  .sky-tab-list {
+    display: flex;
+    gap: 0.5rem;
+    list-style: none;
+    padding: 0;
+  }
+
+  .sky-tab-content {
+    margin-top: 1rem;
+  }
+
+  li.active button {
+    font-weight: bold;
+  }
+}
